@@ -13,6 +13,7 @@ _isxrunning=false
 _isroot=false
 [[ $UID -eq 0 ]] && _isroot=true
 # }}}
+
 ## PS1 CONFIG {{{
   [[ -f $HOME/.dircolors ]] && eval $(dircolors -b $HOME/.dircolors)
   if $_isxrunning; then
@@ -112,7 +113,7 @@ _isroot=false
       fi
     }
 
-    export PS1="$GY[$Y\u$GY@$P\h$GY:$B\W$LB\$(get_git_info)$GY]$W\$(get_prompt_symbol) "
+    export PS1="$G\d \A $GY[$Y\u$GY@$P\h$GY:$B\w$LB\$(get_git_info)$GY]$W\n\$(get_prompt_symbol) "
   else
     export TERM='xterm-color'
   fi
@@ -657,3 +658,5 @@ _isroot=false
 #}}}
 
 set -o vi
+export M2_HOME=/opt/maven
+export M2=$M2_HOME/bin
