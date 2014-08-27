@@ -241,6 +241,8 @@ _isroot=false
     alias la='ll -A'
     alias lm='la | more'
   #}}}
+  alias ff='firefox &>/dev/null &'
+  alias vlc='vlc &>/dev/null &'
 #}}}
 ## FUNCTIONS {{{
   # JEDI GIT COMMANDS {{{
@@ -586,7 +588,7 @@ _isroot=false
   #}}}
   # FILE & STRINGS RELATED FUNCTIONS {{{
     ## Find a file with a pattern in name {{{
-      ff() { find . -type f -iname '*'$*'*' -ls ; }
+      # ff() { find . -type f -iname '*'$*'*' -ls ; }
     #}}}
     ## Find a file with pattern $1 in name and Execute $2 on it {{{
       fe() { find . -type f -iname '*'$1'*' -exec "${2:-file}" {} \;  ; }
@@ -660,3 +662,6 @@ _isroot=false
 set -o vi
 export M2_HOME=/opt/maven
 export M2=$M2_HOME/bin
+
+# fix skype audio
+ export PULSE_LATENCY_MSEC=60
