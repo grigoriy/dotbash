@@ -593,6 +593,13 @@ _isroot=false
     ## Find a file with pattern $1 in name and Execute $2 on it {{{
       fe() { find . -type f -iname '*'$1'*' -exec "${2:-file}" {} \;  ; }
     #}}}
+    ## Convert spaces to underscores, remove {}(),\! and convert filenames in curr dir to lower
+    format_filenames() {
+        ls | while read -r FILE
+             do
+                 mv -v "$FILE" `echo $FILE | tr ' ' '_' | tr -d '[{}(),\!]' | tr '[A-Z]' '[a-z]' | sed 's/_-_/_/g'`
+             done
+    }
     ## Move filenames to lowercase {{{
       lowercase() {
         for file ; do
