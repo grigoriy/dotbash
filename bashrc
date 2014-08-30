@@ -235,7 +235,7 @@ _isroot=false
     fi
   #}}}
   # LS {{{
-    alias ls='ls -hF --color=auto'
+    alias ls='ls -h --color=auto'
     alias lr='ls -R'                    # recursive ls
     alias ll='ls -alh'
     alias la='ll -A'
@@ -597,7 +597,7 @@ _isroot=false
     format_filenames() {
         ls | while read -r FILE
              do
-                 mv -v "$FILE" `echo $FILE | tr ' ' '_' | tr -d '[{}(),\!]' | tr '[A-Z]' '[a-z]' | sed 's/_-_/_/g'`
+                 mv -v "$FILE" `echo $FILE | tr ' ' '_' | tr -d '[{}(),\!]' | tr -d "\'" | tr '[A-Z]' '[a-z]' | sed 's/_-_/_/g'`
              done
     }
     ## Move filenames to lowercase {{{
