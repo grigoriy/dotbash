@@ -243,6 +243,7 @@ _isroot=false
   #}}}
   alias ff='firefox &>/dev/null &'
   alias vlc='vlc &>/dev/null &'
+  alias lock='xscreensaver -lock'
 #}}}
 ## FUNCTIONS {{{
   # JEDI GIT COMMANDS {{{
