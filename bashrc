@@ -133,13 +133,13 @@ _isroot=false
   #}}}
 #}}}
 ## EXPORTS {{{
-  export PATH=/usr/local/bin:$PATH
+  export PATH=$PATH:/usr/local/bin
   export _JAVA_OPTIONS='-Dswing.defaultlaf=com.sun.java.swing.plaf.gtk.GTKLookAndFeel'
   #Ruby support
   if which ruby &>/dev/null; then
     GEM_DIR=$(ruby -rubygems -e 'puts Gem.user_dir')/bin
     if [[ -d "$GEM_DIR" ]]; then
-      export PATH=$GEM_DIR:$PATH
+      export PATH=$PATH:$GEM_DIR
     fi
   fi
   if which google-chrome-stable &>/dev/null; then
