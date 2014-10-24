@@ -13,3 +13,4 @@ export FBFONT=/usr/share/kbd/consolefonts/ter-216n.psf.gz
 export GDK_CORE_DEVICE_EVENTS=1
 export CATALINA_HOME=/usr/share/tomcat8
 export PATH=$PATH:/usr/local/bin/h2/bin
+export MAVEN_OPTS='-Djava.net.preferIPv4Stack=true'
