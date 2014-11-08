@@ -158,7 +158,7 @@ _isroot=false
     # make multiple shells share the same history file
     export HISTSIZE=10000           # bash history will save N commands
     export HISTFILESIZE=${HISTSIZE} # bash will remember N commands
-    export HISTCONTROL=ignoreboth   # ingore duplicates and spaces
+    export HISTCONTROL=ignoreboth:erasedups   # ingore duplicates and spaces
     export HISTIGNORE='&:ls:ll:la:cd:exit:clear:history'
   #}}}
   ## COLORED MANUAL PAGES #{{{
