@@ -252,6 +252,7 @@ _isroot=false
   alias irc='weechat'
   alias rss='newsbeuter'
   alias sop='gsopcast'
+  alias torrent='transmission-gtk'
 
 #}}}
 ## FUNCTIONS {{{
