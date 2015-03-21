@@ -192,6 +192,7 @@ _isroot=false
     alias nano='nano -w'
     alias ping='ping -c 5'
     alias vi='vim'
+    alias suspend='systemctl suspend'
   #}}}
   # PRIVILEGED ACCESS {{{
     if ! $_isroot; then
@@ -245,6 +246,13 @@ _isroot=false
   alias vlc='vlc &>/dev/null &'
   alias lock='xscreensaver -lock'
   alias idea='idea.sh &>/dev/null &'
+  alias pdf='apvlv'
+  alias image='viewnior'
+  alias screenshot='shutter'
+  alias irc='weechat'
+  alias rss='newsbeuter'
+  alias sop='gsopcast'
+
 #}}}
 ## FUNCTIONS {{{
   # JEDI GIT COMMANDS {{{
