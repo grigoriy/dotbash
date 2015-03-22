@@ -253,6 +253,7 @@ _isroot=false
   alias rss='newsbeuter'
   alias sop='gsopcast'
   alias torrent='transmission-gtk'
+  alias mixer='alsamixer'
 
 #}}}
 ## FUNCTIONS {{{
