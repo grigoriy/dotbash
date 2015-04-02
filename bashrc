@@ -685,3 +685,5 @@ export M2=$M2_HOME/bin
 
 # fix skype audio
  export PULSE_LATENCY_MSEC=60
+
+stty -ixon
