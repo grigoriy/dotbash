@@ -246,7 +246,7 @@ _isroot=false
   alias vlc='vlc &>/dev/null &'
   alias lock='xscreensaver -lock'
   alias idea='idea.sh &>/dev/null &'
-  alias view-pdf='apvlv'
+  alias view-pdf='okular'
   alias view-image='viewnior'
   alias play='mpv'
   alias screenshot='shutter'
@@ -255,6 +255,7 @@ _isroot=false
   alias sop='gsopcast'
   alias torrent='transmission-gtk'
   alias mixer='alsamixer'
+  alias ec2-connect='ssh -i /home/grigoriy/.ec2/arch_kuznetsovskaya.pem ubuntu@52.28.18.107'
 
 #}}}
 ## FUNCTIONS {{{
