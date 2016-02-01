@@ -256,6 +256,7 @@ _isroot=false
   alias sop='gsopcast'
   alias torrent='transmission-gtk'
   alias mixer='alsamixer'
+  alias equalizer='qpaeq &>/dev/null &'
   alias ec2-connect='ssh -i /home/grigoriy/.ec2/arch_kuznetsovskaya.pem ubuntu@52.28.18.107'
 
 #}}}
